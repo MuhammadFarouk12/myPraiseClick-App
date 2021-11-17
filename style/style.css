@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor: hsl(353, 100%, 73%);
+    --mainColorTrans: hsl(353, 100%, 78%);
+    --mainBackground: #C8EE87;
+}
+body {
+    background: var(--mainBackground);
+    font-family: 'Cairo', sans-serif;
+}
+.seprator{
+    width: 3px;
+    background: #ddd;
+}
+.DevicePhone{
+    width: 400px;
+    border: 3px solid red;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+}
+.DevicePhone .bg1{
+    width: 100%;
+}
+.DevicePhone section.block {
+    margin: 0 10px;
+    background: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    text-align:center;
+    border-radius: 10px;
+    color: var(--mainColor);
+    position: relative;
+}
+.DevicePhone section.block::before{
+    content: '';
+    position: absolute;
+    left: 48%;
+    width: 3px;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ddd;
+}
+.location{
+    display: flex;
+}
+.location > *{
+    flex: 1;
+    margin-top: 20px;
+    color: var(--mainColor);
+    text-align: center;
+}
+.location > * .topic{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.Rectangle_2{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+}
+.btn{
+    width: fit-content;
+    margin: auto;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: var(--mainColor);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+.btn:hover{
+    background: var(--mainColorTrans);
+}
+.aya-quran1{
+    color: var(--mainColor);
+    text-align: center;
+    font-size: .8rem;
+}
