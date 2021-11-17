@@ -18,7 +18,7 @@ body {
 }
 .DevicePhone{
     width: 400px;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     margin: auto;
     display: grid;
     justify-content: center;
@@ -71,6 +71,7 @@ body {
 }
 .btn{
     width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
     padding: 15px 25px;
     font-size: 1.1rem;
@@ -89,4 +90,12 @@ body {
     color: var(--mainColor);
     text-align: center;
     font-size: .8rem;
+    margin-bottom: 20px;
+}
+.hover{
+    transition: .5s;
+    outline: 1.5px solid transparent;
+}
+.hover:hover{
+    outline: 1.5px solid var(--mainColor);
 }

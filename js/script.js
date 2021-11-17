@@ -1,10 +1,9 @@
-let clicks = localStorage.getItem('clicks')?localStorage.getItem('clicks'):0;
-
-(function upadateLocalStorageBy(value){
+let clicks = localStorage.getItem('clicks')!='undefined'?localStorage.getItem('clicks'):0;
+function upadateLocalStorageBy(value){
     localStorage.setItem('clicks', value);
     document.getElementById('clicks').innerHTML = value;
-})();
-// upadateLocalStorageBy(clicks);
+};
+upadateLocalStorageBy(clicks);
 function increment(){
     clicks++;
     upadateLocalStorageBy(clicks)
