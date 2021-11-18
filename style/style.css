@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 :root{
-    --mainColor: hsl(353, 100%, 73%);
-    --mainColorTrans: hsl(353, 100%, 78%);
+    --mainColor: hsl(353, 100%, 33%);
+    --mainColorTrans: hsl(353, 44%, 49%);
     --mainBackground: #C8EE87;
 }
 body {
@@ -22,6 +22,7 @@ body {
     margin: auto;
     display: grid;
     justify-content: center;
+    max-width: 100%;
 }
 .DevicePhone .bg1{
     width: 100%;
