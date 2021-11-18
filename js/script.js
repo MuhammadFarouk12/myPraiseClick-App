@@ -1,4 +1,4 @@
-let clicks = localStorage.getItem('clicks')!='undefined'?localStorage.getItem('clicks'):0;
+let clicks = localStorage.getItem('clicks') ? localStorage.getItem('clicks') : '0000';
 function upadateLocalStorageBy(value){
     localStorage.setItem('clicks', value);
     document.getElementById('clicks').innerHTML = value;
@@ -8,7 +8,3 @@ function increment(){
     clicks++;
     upadateLocalStorageBy(clicks)
 };
-function reset(){
-    clicks = 0;
-    upadateLocalStorageBy(clicks);
-}
